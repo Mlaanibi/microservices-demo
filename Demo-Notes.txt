@@ -1,0 +1,18 @@
+java -jar build/libs/sample-config-server-1.0.0.jar
+java -jar build/libs/discovery-server-1.0.0.jar
+
+java -jar build/libs/accounts-core-service-1.0.0.jar
+http://localhost:8086/accounts
+http://localhost:8086/accounts/{123}
+
+java -jar build/libs/payments-core-service-1.0.0.jar
+http://localhost:8085/accounts/123/payment-details
+
+java -jar build/libs/accounts-composite-service-1.0.0.jar
+http://localhost:8084/accounts/123
+http://localhost:8084/accounts/
+
+java -jar build/libs/accounts-api-service-1.0.0.jar
+http://localhost:8082/accounts
+http://localhost:8082/accountdetails
+http://localhost:8082/accountdetails/123

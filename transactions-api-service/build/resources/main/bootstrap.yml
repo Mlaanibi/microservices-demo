@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: transactions-api-service
+  
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888       
+      
