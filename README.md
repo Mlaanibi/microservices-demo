@@ -28,11 +28,9 @@ Architecture consists of 6 business services, a centralized config server and se
     * [transactions api service] (#api-services) - API service for transactions
 
 The Architecture is supported by configuration server and discovery server. 
-* [config server] (#sample-config-server) - Centralized configuration server
-Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for centralized management of external properties for applications across all environments. Spring Cloud is a new project in the spring.io family with a set of components that can be used to implement Microservices Architecture. To a large extent Spring Cloud 1.0 is based on components from Netflix OSS. Spring Cloud integrates the Netflix components in the Spring environment in a way using auto configuration and convention over configuration similar to how Spring Boot works.
+* [Config server] (#sample-config-server) - Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for centralized management of external properties for applications across all environments. Spring Cloud is a new project in the spring.io family with a set of components that can be used to implement Microservices Architecture. To a large extent Spring Cloud 1.0 is based on components from Netflix OSS. Spring Cloud integrates the Netflix components in the Spring environment in a way using auto configuration and convention over configuration similar to how Spring Boot works.
 
-* [discovery server] (#discovery-server) - Service discovery server
-Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
+* [Service discovery server] (#discovery-server) - Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
 
 ## <a name="spring-boot-overview"></a>Spring Boot Overview
 ## <a name="spring-cloud-overview"></a>Spring Cloud Overview
