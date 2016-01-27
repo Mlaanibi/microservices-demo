@@ -29,12 +29,8 @@ Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance
 #### <a name="core-services"></a> Core Services
 Three core services namely Account Core Service manages accounts, Payments Core Service manages payments for a given account and Transactions Core Service manages transactions for a given account
 
-#### <a name="accounts-composite-service"></a> Accounts Composite Servicee
+#### <a name="accounts-composite-service"></a> Composite Service
 Accounts Composite Service retrieves accounts and payment details, aggregates and composes the result.
 
 #### <a name="api-services"></a> API Services
 Accounts API Service retrieves account and payment information by invoking Accounts Composite Service and Transactions API Service retrieves transactions from Transactions Core Service.ns API Service
-
-
-
-
