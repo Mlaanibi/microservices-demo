@@ -1,7 +1,7 @@
 ## Microservices Architecture Demo Application
 This is an example of Microservices Architecture using Spring Boot, Spring Cloud, and Netflix OSS frameworks such as Hystrix, Eureka. 
 
-# Table of Contents
+## Table of Contents
 * [Application Architecture](#application-architecture)
 * [Spring Boot Overview] (#spring-boot-overview)
 * [Spring Cloud Overview] (#spring-cloud-overview)
