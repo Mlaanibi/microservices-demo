@@ -5,16 +5,16 @@ This is an example of Microservices Architecture using Spring Boot, Spring Cloud
 
 ## Architecture Components
 * Three core services responsible for handling information regarding accounts, payments and transactions. 
-    * [account core service] (#accounts-core-service) - Account Core Service
-    * [payments core service] (#payments-core-service) - Payments Core Service for a given account
-    * [transaction core service] (#transactions-core-service) - Transaction Core Service for a given account
+    * [account core service] (#core-services) - Account Core Service
+    * [payments core service] (#core-services) - Payments Core Service for a given account
+    * [transaction core service] (#core-services) - Transaction Core Service for a given account
 
 * One composite service, accounts-composite-service, that can aggregate information from the two core services and compose a view of account information together with payment information for an account. 
     * [account composite service] (#accounts-composite-service) - Composite Service that aggregates the results of accounts and payment details for a given account
 
 * Two API services that can be exposed to consumer
-    * [account api service] (#accounts-api-service) - API service for account
-    * [transactions api service] (#transactions-api-service) - API service for transaction
+    * [account api service] (#api-services) - API service for accounts
+    * [transactions api service] (#api-services) - API service for transactions
 
 The Architecture is supported by configuration server and discovery server. 
 * [config server] (#sample-config-server) - Centralized configuration server
@@ -26,17 +26,14 @@ Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for cen
 #### <a name="discovery-server"></a> Service Discovery Server
 Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
 
-#### <a name="accounts-core-service"></a> Account Core Service
+#### <a name="core-services"></a> Core Services
+Three core services namely Account Core Service manages accounts, Payments Core Service manages payments for a given account and Transactions Core Service manages transactions for a given account
 
-#### <a name="payments-core-service"></a> Payments Core Service
+#### <a name="accounts-composite-service"></a> Accounts Composite Servicee
+Accounts Composite Service retrieves accounts and payment details, aggregates and composes the result.
 
-#### <a name="transactions-core-service"></a> Transactions Core Service
-
-#### <a name="accounts-composite-service"></a> Accounts Composite Service
-
-#### <a name="accounts-api-service"></a> Accounts API Service
-
-#### <a name="transactions-api-service"></a> Transactions API Service
+#### <a name="api-services"></a> API Services
+Accounts API Service retrieves account and payment information by invoking Accounts Composite Service and Transactions API Service retrieves transactions from Transactions Core Service.ns API Service
 
 
 
