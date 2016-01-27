@@ -1,12 +1,11 @@
 package rest.api.service;
 
-import java.util.List;
-
 import rest.api.model.Transaction;
+import rest.api.model.TransactionCollectionResponse;
 
 public interface TransactionService {
 
-	public Transaction getTransactionDetail(long transactionId);
+	public Transaction getTransactionDetail(String accountNumber, long transactionId);
 	
-	public List<Transaction> getTransactions(String accountId);
+	public TransactionCollectionResponse getTransactions(String accountId);
 }

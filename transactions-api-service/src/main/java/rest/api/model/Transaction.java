@@ -5,6 +5,8 @@ import java.io.Serializable;
 public class Transaction implements Serializable{
 	
 	private static final long serialVersionUID = -3224430790044307427L;
+	
+	private long transactionId;
 	private String accountNumber;
 	private String fromAccount;
 	private String transactionDate;
@@ -12,13 +14,22 @@ public class Transaction implements Serializable{
 	
 	public Transaction(){}
 
-	public Transaction(String accountNumber, String fromAccount,
+	public Transaction(long transactionId, String accountNumber, String fromAccount,
 			String transactionDate, double transactionAmount) {
 		
 		this.accountNumber = accountNumber;
 		this.fromAccount = fromAccount;
 		this.transactionDate = transactionDate;
 		this.transactionAmount = transactionAmount;
+	}
+	
+
+	public long getTransactionId() {
+		return transactionId;
+	}
+
+	public void setTransactionId(long transactionId) {
+		this.transactionId = transactionId;
 	}
 
 	public String getAccountNumber() {

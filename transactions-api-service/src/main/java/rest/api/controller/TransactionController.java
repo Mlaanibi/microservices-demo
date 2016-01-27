@@ -20,9 +20,9 @@ public class TransactionController {
     public TransactionCollectionResponse getTransactions(
     		@PathVariable("accountNumber") String accountNumber) {
     	
-    	TransactionCollectionResponse response = new TransactionCollectionResponse();
-    	response.setTransactions(transactionService.getTransactions(accountNumber));
-    	return response;
+    	/*TransactionCollectionResponse response = new TransactionCollectionResponse();
+    	response.setTransactions(transactionService.getTransactions(accountNumber));*/
+    	return transactionService.getTransactions(accountNumber);
     }
     
     @RequestMapping("/accounts/{accountNumber}/transactions/{transactionId}")
@@ -30,7 +30,7 @@ public class TransactionController {
     		@PathVariable("accountNumber") String accountNumber,
     		@PathVariable("transactionId") long transactionId
     		) {
-        return transactionService.getTransactionDetail(transactionId);
+        return transactionService.getTransactionDetail(accountNumber, transactionId);
     }
     
 }

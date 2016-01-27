@@ -38,6 +38,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator:${project.bootVersion}")
 	compile("org.springframework.cloud:spring-cloud-config-client:${project.cloudVersion}")
 	compile("org.springframework.cloud:spring-cloud-starter-eureka:${project.cloudVersion}")
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix:${project.cloudVersion}")
     
     testCompile("junit:junit")
 }
