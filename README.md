@@ -1,6 +1,8 @@
 # Microservices Architecture 
 This is an example of Microservices Architecture using Spring Boot, Spring Cloud, and Netflix OSS frameworks such as Hystrix, Eureka.
 
+![Microservices Architecture](https://cloud.githubusercontent.com/assets/5256077/12605129/d2bf8090-c4e7-11e5-812c-c432d056134a.jpg)
+
 # Architecture Components
 Architecture consists of 5 bsuiness services. 
 
