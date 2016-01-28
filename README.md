@@ -38,5 +38,17 @@ Most Spring Boot applications need very little Spring configuration. Spring Boot
 ## <a name="spring-cloud-overview"></a>Spring Cloud Overview
 The goal of Spring Cloud is to provide the Spring developers with an easily consumable set of tools to build distributed systems with common patterns in distributed systems (e.g. configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state). It primarily does this by wrapping other implementation stacks, starting with the Netflix OSS stack. These stacks are then consumed via the familiar tools of annotation-based configuration, Java configuration, and template-based programming.
 
-## <a name="spring-config-overview"></a>Spring Cloud Config Overview
-## <a name="spring-cloud-netflix-overview"></a>Spring Cloud Netflix Overview
+### <a name="spring-config-overview"></a>Spring Cloud Config Overview
+Spring Cloud Config Server provides a centralized configuration service that is horizontally scalable. It uses as its data store a pluggable repository layer that currently supports local storage, Git, and Subversion. By leveraging a version control system as a configuration store, developers can easily version and audit configuration changes.
+
+### <a name="spring-cloud-netflix-overview"></a>Spring Cloud Netflix Overview
+Spring Cloud Netflix provides wrappers around several Netflix components: Eureka, Ribbon, Hystrix, and Zuul.
+
+#### Eureka
+Eureka is a resilient service registry implementation. A service registry is one mechanism for implementing the Service Discovery pattern. Spring Cloud Netflix enables the deployment of embedded Eureka servers by simply adding the spring-cloud-starter-eureka-server dependency to a Spring Boot application, then annotating that application’s configuration class with @EnableEurekaServer.
+
+#### Hystrix
+Hystrix provides an implementation of common fault-tolerance patterns for distributed systems such as circuit breakers and bulkheads. Circuit breakers are normally implemented as a state machine.
+
+
+
