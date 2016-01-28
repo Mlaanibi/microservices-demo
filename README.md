@@ -45,10 +45,10 @@ Spring Cloud Config Server provides a centralized configuration service that is 
 Spring Cloud Netflix provides wrappers around several Netflix components: Eureka, Ribbon, Hystrix, and Zuul.
 
 #### Eureka
-Eureka is a resilient service registry implementation. A service registry is one mechanism for implementing the Service Discovery pattern. Spring Cloud Netflix enables the deployment of embedded Eureka servers by simply adding the spring-cloud-starter-eureka-server dependency to a Spring Boot application, then annotating that application’s configuration class with @EnableEurekaServer.
+[Eureka] (https://github.com/Netflix/eureka/blob/master/README.md) is a resilient service registry implementation. A service registry is one mechanism for implementing the Service Discovery pattern. Spring Cloud Netflix enables the deployment of embedded Eureka servers by simply adding the spring-cloud-starter-eureka-server dependency to a Spring Boot application, then annotating that application’s configuration class with @EnableEurekaServer.
 
 #### Hystrix
-Hystrix provides an implementation of common fault-tolerance patterns for distributed systems such as circuit breakers and bulkheads. Circuit breakers are normally implemented as a state machine.
+[Hystrix] (https://github.com/Netflix/Hystrix/blob/master/README.md) provides an implementation of common fault-tolerance patterns for distributed systems such as circuit breakers and bulkheads. Circuit breakers are normally implemented as a state machine.
 
 
 
