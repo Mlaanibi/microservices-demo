@@ -32,6 +32,11 @@ Architecture consists of 6 business services, a centralized config server and se
 * [Service discovery server] (#discovery-server) - Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
 
 ## <a name="spring-boot-overview"></a>Spring Boot Overview
+Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that can be "just run". 
+Most Spring Boot applications need very little Spring configuration. Spring Boot embeds Tomcat, Jetty or Undertow directly and there is no need to deploy WAR files. You can use Spring Boot to create Java applications that can be started using java -jar or more traditional war deployments. It provides production-ready features such as metrics, health checks and externalized configuration.
+
 ## <a name="spring-cloud-overview"></a>Spring Cloud Overview
+The goal of Spring Cloud is to provide the Spring developers with an easily consumable set of tools to build distributed systems with common patterns in distributed systems (e.g. configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state). It primarily does this by wrapping other implementation stacks, starting with the Netflix OSS stack. These stacks are then consumed via the familiar tools of annotation-based configuration, Java configuration, and template-based programming.
+
 ## <a name="spring-config-overview"></a>Spring Cloud Config Overview
 ## <a name="spring-cloud-netflix-overview"></a>Spring Cloud Netflix Overview
