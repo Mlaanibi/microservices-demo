@@ -47,14 +47,15 @@ public class TransactionServiceImpl implements TransactionService{
 	}
 	
 	
-	public List<Transaction> getFallbackTransactions(String accountNumber) {
+	public TransactionCollectionResponse getFallbackTransactions(String accountNumber) {
+		TransactionCollectionResponse response = new TransactionCollectionResponse();
 		List<Transaction> transactions = new ArrayList<Transaction>();
 		for(int i=0; i<3; i++){
 			Transaction transaction = new Transaction(i, accountNumber, "FromAcc-"+i, "2014-12-12", 10);
 			transactions.add(transaction);
 		}
-		
-		return transactions;
+		response.setTransactions(transactions);
+		return response;
 	}
 	
 	public Transaction getFallbackTransactionDetail(String accountNumber, long transactionId) {

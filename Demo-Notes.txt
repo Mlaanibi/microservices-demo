@@ -5,6 +5,10 @@ java -jar build/libs/accounts-core-service-1.0.0.jar
 http://localhost:8086/accounts
 http://localhost:8086/accounts/{123}
 
+java -jar build/libs/transactions-core-service-1.0.0.jar
+http://localhost:8087/accounts/123/transactions
+http://localhost:8087/accounts/123/transactions/786
+
 java -jar build/libs/payments-core-service-1.0.0.jar
 http://localhost:8085/accounts/123/payment-details
 
@@ -16,3 +20,15 @@ java -jar build/libs/accounts-api-service-1.0.0.jar
 http://localhost:8082/accounts
 http://localhost:8082/accountdetails
 http://localhost:8082/accountdetails/123
+
+java -jar build/libs/transactions-api-service-1.0.0.jar
+http://localhost:8083/accounts/123/transactions
+http://localhost:8083/accounts/123/transactions/786
+
+java -jar build/libs/monitor-dashboard-1.0.0-SNAPSHOT.jar
+http://localhost:7979/hystrix
+http://localhost:8083/hystrix.stream
+
+java -jar build/libs/turbine-server-1.0.0-SNAPSHOT.jar
+http://localhost:8989/turbine.stream??cluster=default
+

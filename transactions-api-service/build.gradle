@@ -3,6 +3,7 @@ buildscript {
         bootVersion = '1.2.3.RELEASE'
 		cloudVersion = '1.0.0.RELEASE'
 		seurityVersion = '2.0.7.RELEASE'
+		amqpVersion = '1.0.0.RELEASE'
     }	
     repositories {
         mavenCentral()
@@ -41,6 +42,10 @@ dependencies {
 	compile("org.springframework.cloud:spring-cloud-starter-hystrix:${project.cloudVersion}")
     
     testCompile("junit:junit")
+    
+    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${project.amqpVersion}")
+    compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:${project.amqpVersion}")
+    
 }
 
 task wrapper(type: Wrapper) {

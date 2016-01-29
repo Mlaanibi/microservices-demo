@@ -1,8 +1,8 @@
 buildscript {
 	project.ext {
         bootVersion = '1.2.3.RELEASE'
-	cloudVersion = '1.0.0.RELEASE'
-	seurityVersion = '2.0.7.RELEASE'
+		cloudVersion = '1.0.0.RELEASE'
+		seurityVersion = '2.0.7.RELEASE'
     }	
     repositories {
         mavenCentral()
