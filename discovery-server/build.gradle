@@ -59,6 +59,6 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 task createWrapper(type: Wrapper) {
-    gradleVersion = '2.0'
+    gradleVersion = '2.9'
 }
 
