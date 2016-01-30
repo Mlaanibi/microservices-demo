@@ -23,5 +23,3 @@ The bootstrap context for external configuration is located by convention at boo
 Important dependencies in classpath
 * spring-cloud-config-client dependency so that the application can comsume the config server
 * spring-cloud-starter-eureka dependecy to register the service in discovery server 
-* spring-cloud-starter-hystrix dependecy to enable the circuit breaker for the service
-
