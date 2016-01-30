@@ -28,7 +28,8 @@ http://localhost:8083/accounts/123/transactions/786
 java -jar build/libs/monitor-dashboard-1.0.0-SNAPSHOT.jar
 http://localhost:7979/hystrix
 http://localhost:8083/hystrix.stream
+http://localhost:8082/hystrix.stream
 
 java -jar build/libs/turbine-server-1.0.0-SNAPSHOT.jar
-http://localhost:8989/turbine.stream??cluster=default
+http://localhost:8989/turbine.stream?cluster=default
 

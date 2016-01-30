@@ -1,9 +1,3 @@
-server:
-  port: 8989
-
-management:
-  port: 8990
-
 info:
   component: Turbine
 
@@ -15,33 +9,28 @@ endpoints:
   shutdown:
     enabled: true
 
-#logging:
-  #level:
-    #root: WARN
-    #com.netflix.discovery: 'OFF'
+server:
+  port: 8989
 
-    # Get info regarding connection to the cofig server and retries if required
-    #org.springframework.cloud.config.client.ConfigServicePropertySourceLocator: INFO
-    #org.springframework.retry.support.RetryTemplate: DEBUG
+management:
+  port: 8990
 
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
     # org.springframework.integration: DEBUG
-
-    # Set INFO to see the allocated port
-    #org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer: INFO
-    #org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainer: INFO
 
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
   client:
-    serviceUrl:
-      defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
 
-#turbine:
-#  appConfig: customers,stores,productapi
-#  clusterNameExpression: 'default'
+turbine:
+  appConfig: accounts-api-service, transactions-api-service
+  clusterNameExpression: 'default'
 
-#turbine:
-#  aggregator:
-#    clusterConfig: CUSTOMERS
-#  appConfig: customers
+
+
