@@ -15,17 +15,17 @@ Architecture consists of 6 business services, a centralized config server and se
 
 ### Architecture Components
 * Core services responsible for handling information regarding accounts, payments and transactions. Account Core Service manages accounts, Payments Core Service manages payments for a given account and Transactions Core Service manages transactions for a given account.
-    * [account core service] (accounts-api-service/README.md) - Account Core Service
-    * [payments core service] (#core-services) - Payments Core Service for a given account
-    * [transaction core service] (#core-services) - Transaction Core Service for a given account
+    * [account core service] (accounts-core-service/README.md) - Account Core Service
+    * [payments core service] (payments-core-service/README.md) - Payments Core Service for a given account
+    * [transaction core service] (transactions-core-service/README.md) - Transaction Core Service for a given account
 
 * Composite service, accounts-composite-service, that aggregates information from the two core services and composes a view of account information together with payment information for an account.
 
-    * [account composite service] (#accounts-composite-service) - Composite Service that aggregates the results of accounts and payment details for a given account
+    * [account composite service] (accounts-composite-service/README.md) - Composite Service that aggregates the results of accounts and payment details for a given account
 
 * API services, Accounts API Service retrieves account and payment information by invoking Accounts Composite Service and Transactions API Service retrieves transactions from Transactions Core Service.  
-    * [account api service] (#api-services) - API service for accounts
-    * [transactions api service] (#api-services) - API service for transactions
+    * [account api service] (accounts-api-service/README.md) - API service for accounts
+    * [transactions api service] (transactions-api-service/README.md) - API service for transactions
 
 * [Config server] (#sample-config-server) - Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for centralized management of external properties for applications across all environments. Spring Cloud is a new project in the spring.io family with a set of components that can be used to implement Microservices Architecture. To a large extent Spring Cloud 1.0 is based on components from Netflix OSS. Spring Cloud integrates the Netflix components in the Spring environment in a way using auto configuration and convention over configuration similar to how Spring Boot works.
 
