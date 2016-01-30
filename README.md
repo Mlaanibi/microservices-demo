@@ -15,7 +15,7 @@ Architecture consists of 6 business services, a centralized config server and se
 
 ### Architecture Components
 * Core services responsible for handling information regarding accounts, payments and transactions. Account Core Service manages accounts, Payments Core Service manages payments for a given account and Transactions Core Service manages transactions for a given account.
-    * [account core service] (#microservices-demo/blob/master/accounts-api-service/README.md) - Account Core Service
+    * [account core service] (accounts-api-service/README.md) - Account Core Service
     * [payments core service] (#core-services) - Payments Core Service for a given account
     * [transaction core service] (#core-services) - Transaction Core Service for a given account
 
