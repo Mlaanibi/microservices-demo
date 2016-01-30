@@ -13,8 +13,13 @@ If you want to run the application as jar file, then run java -jar build/libs/ac
 
 ##External Configuration
 
-The project derives it's configuration from the config server service. We have defined the spring.cloud.config.uri in the bootstrap.yml file and that tells the application where to pick up the external confiurations. In our case, the URL points to the running config server server. You also need to have the spring-cloud-config-client dependency in the classpath so that the application can comsume the config server.
+The project derives it's configuration from the config server service. We have defined the spring.cloud.config.uri in the bootstrap.yml file and that tells the application where to pick up the external confiurations. In our case, the URL points to the running config server server (http://localhost:8888). 
 
 A Spring Cloud application operates by creating a "bootstrap" context, which is a parent context for the main application. This bootstrap context loads properties from external sources (the config-server) and decrypts the properties if required.
 
 The bootstrap context for external configuration is located by convention at bootstrap.yml whereas the internal configuration is located by convention at application.yml. Note that you can also have .properties file instead of .yml files.
+
+Important dependencies in classpath
+* spring-cloud-config-client dependency so that the application can comsume the config server
+* spring-cloud-starter-eureka dependecy to register the service in discovery server 
+* spring-cloud-starter-hystrix dependecy to enable the circuit breaker for the service
