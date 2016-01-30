@@ -8,11 +8,14 @@ Projects that need to be started before
 * discovery-server - For starting the Eureka server to register all the services (api, core and composite)
 
 ## Running the application
-Build the application by running the gradle clean build gradle command at the "accounts-api-service" project root folder on the terminal.
-If you want to run the application as jar file, then run java -jar build/libs/accounts-api-service-1.0.0.jar command at the terminal.
+Build the application by running the command: gradle clean build
+Run the application by running the command: java -jar build/libs/accounts-api-service-1.0.0.jar
+
+Invoke the service by using the below urls
+http://localhost:8082/accounts
+http://localhost:8082/accountdetails
 
 ##External Configuration
-
 The project derives it's configuration from the config server service. We have defined the spring.cloud.config.uri in the bootstrap.yml file and that tells the application where to pick up the external confiurations. In our case, the URL points to the running config server server (http://localhost:8888). 
 
 A Spring Cloud application operates by creating a "bootstrap" context, which is a parent context for the main application. This bootstrap context loads properties from external sources (the config-server) and decrypts the properties if required.
