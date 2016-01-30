@@ -27,11 +27,11 @@ Architecture consists of 6 business services, a centralized config server and se
     * [account api service] (accounts-api-service/README.md) - API service for accounts
     * [transactions api service] (transactions-api-service/README.md) - API service for transactions
 
-* [Config server] (#sample-config-server) - Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for centralized management of external properties for applications across all environments. Spring Cloud is a new project in the spring.io family with a set of components that can be used to implement Microservices Architecture. To a large extent Spring Cloud 1.0 is based on components from Netflix OSS. Spring Cloud integrates the Netflix components in the Spring environment in a way using auto configuration and convention over configuration similar to how Spring Boot works.
+* [Config server] (sample-config-server/README.md) - Uses [Spring Cloud Config] (http://cloud.spring.io/spring-cloud-config/) for centralized management of external properties for applications across all environments. Spring Cloud is a new project in the spring.io family with a set of components that can be used to implement Microservices Architecture. To a large extent Spring Cloud 1.0 is based on components from Netflix OSS. Spring Cloud integrates the Netflix components in the Spring environment in a way using auto configuration and convention over configuration similar to how Spring Boot works.
 
-* [Service discovery server] (#discovery-server) - Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
+* [Service discovery server] (discovery-server.README.md) - Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
 
-* [Monitor Dashboard] (#monitor-dashboard) - Uses Hystrix dashboard to provide a graphical overview of circuit breakers and Turbine, based on information in Eureka, to provide the dashboard with information from all circuit breakers in a system landscape. 
+* [Monitor Dashboard] (monitor-dashboard.README.md) - Uses Hystrix dashboard to provide a graphical overview of circuit breakers and Turbine, based on information in Eureka, to provide the dashboard with information from all circuit breakers in a system landscape. 
 
 * Auth Server
 
