@@ -31,6 +31,17 @@ Architecture consists of 6 business services, a centralized config server and se
 
 * [Service discovery server] (#discovery-server) - Uses [Netflix Eureka] (https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance) as service discovery server. Netflix Eureka allows microservices to register themselves at runtime as they appear in the system landscape.
 
+* [Monitor Dashboard] (#monitor-dashboard) - Uses Hystrix dashboard to provide a graphical overview of circuit breakers and Turbine, based on information in Eureka, to provide the dashboard with information from all circuit breakers in a system landscape. 
+
+* Auth Server
+
+
+## Using the Application
+
+#### Running on local machine
+* You can build the projects by running the build.gradle file under each each project. The creates a jar file for each individual project. Run the individual project jar by running the command running command - java -jar build/libs/<application_name>.jar command.
+* Please refer to the individual readme files on instructions of how to run the services. 
+
 ## <a name="spring-boot-overview"></a>Spring Boot Overview
 Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that can be "just run". 
 Most Spring Boot applications need very little Spring configuration. Spring Boot embeds Tomcat, Jetty or Undertow directly and there is no need to deploy WAR files. You can use Spring Boot to create Java applications that can be started using java -jar or more traditional war deployments. It provides production-ready features such as metrics, health checks and externalized configuration.
