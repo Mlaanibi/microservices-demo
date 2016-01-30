@@ -9,7 +9,7 @@ When a client registers with Eureka, it provides meta-data about itself such as 
 
 ### Projects that need to be started before
 
-* [config server] (sample-config-server/README.md) - For pulling the configuration information
+* [config server] (https://github.com/mrudul03/microservices-demo/blob/master/sample-config-server/README.md) - For pulling the configuration information
 
 ## Running the application
 
