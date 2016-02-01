@@ -11,7 +11,7 @@ This is an example of Microservices Architecture using Spring Boot, Spring Cloud
 ## <a name="application-architecture"></a>Application Architecture
 Architecture consists of 6 business services, a centralized config server and service discovery server.Each component is built separately using their own build file. We use gradle as build system.
 
-![Microservices Architecture](https://cloud.githubusercontent.com/assets/5256077/12694768/09b90198-c75e-11e5-9902-fb8155177ef6.jpg)
+![Microservices Architecture](https://cloud.githubusercontent.com/assets/5256077/12709643/27e7428e-c8d4-11e5-894c-c36e68650336.jpg)
 
 ### Architecture Components
 * Core services responsible for handling information regarding accounts, payments and transactions. Account Core Service manages accounts, Payments Core Service manages payments for a given account and Transactions Core Service manages transactions for a given account.
