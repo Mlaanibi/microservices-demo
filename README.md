@@ -34,7 +34,7 @@ Architecture consists of 6 business services, a centralized config server and se
 * [Monitor Dashboard] (monitor-dashboard/README.md) - Uses Hystrix dashboard to provide a graphical overview of circuit breakers and Turbine, based on information in Eureka, to provide the dashboard with information from all circuit breakers in a system landscape. 
 
 * Auth Server
-Work In Progress
+[Work In Progress]
 
 
 ## Using the Application
