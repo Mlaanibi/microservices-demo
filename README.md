@@ -78,6 +78,6 @@ Spring Cloud Netflix provides wrappers around several Netflix components: Eureka
 [Hystrix Dashboard] (https://github.com/Netflix/Hystrix/wiki/Dashboard) In addition to providing the state machine behavior, Hystrix also emits a metrics stream from each circuit breaker providing important telemetry such as request metering, a response time histogram, and the number of successful, failed, and short-circuited requests.
 
 #### Zuul
-[Zuul] (https://github.com/Netflix/zuul/wiki) handles all incoming requests. It is used in combination with other Netflix components like Ribbon and Hystrix to provide a flexible and resilient routing tier for Netflix services.
+[Zuul] (https://github.com/Netflix/zuul/wiki) handles all incoming requests. It is used in combination with other Netflix components like Ribbon and Hystrix to provide a flexible and resilient routing tier for services.
 
 
