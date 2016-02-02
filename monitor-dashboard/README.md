@@ -8,4 +8,9 @@ Run this app as a normal Spring Boot app and then go to the home page in a brows
 
 These services use @EnableHystrix to expose the stream.
 
-Sample screenshots from Hystrix dashboard:
+Sample screenshot for Hystrix Dashboard for Accounts API Service:
+
+![Hystrix Dashboard for Accounts API Service](https://cloud.githubusercontent.com/assets/5256077/12741287/f3751954-c9a0-11e5-8595-f9e0f83e06ac.jpg)
+
+Sample screenshot for Hystrix Dashboard for Transactions API Service:
+![Hystrix Dashboard for Transactions API Service](https://cloud.githubusercontent.com/assets/5256077/12741300/0f5f3334-c9a1-11e5-8f17-aae1c592b631.jpg)
