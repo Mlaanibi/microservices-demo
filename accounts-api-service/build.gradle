@@ -43,8 +43,8 @@ dependencies {
     
     testCompile("junit:junit")
     
-    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${project.amqpVersion}")
-    compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:${project.amqpVersion}")
+    //compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:${project.amqpVersion}")
+    //compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:${project.amqpVersion}")
 }
 
 task wrapper(type: Wrapper) {
