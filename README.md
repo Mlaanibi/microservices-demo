@@ -43,12 +43,11 @@ Architecture consists of 6 business services, a centralized config server and se
 ## Using the Application
 
 #### Running on local machine
-* You can build the projects by running the gradlew file under each each project with command "gradlew clean build". The creates a jar file for each individual project. Run the individual project jar by running the command running command - java -jar build/libs/<application_name>.jar command.
+* You can build the projects by running the gradlew file under each each project with command "gradlew clean build". The creates a jar file for each individual project. Run the individual project jar by running the command running command - java -jar build/libs/<application_name>.jar command. You can run the applications in the order listed below.
 
-You can run the applications in the order listed below.
     * Config Server - This application should be run first as it holds properties for all applications 
     * Discovery Server - This application should be run second as all the services register themselves with discovery server
-    * All other components (services and other supporting servives)
+    * All other components (services (Core, Composite and API) and other supporting services)
 
 * Please refer to the individual readme files on instructions of how to run the services. 
 
