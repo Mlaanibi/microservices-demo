@@ -36,7 +36,7 @@ Architecture consists of 6 business services, a centralized config server and se
 * Auth Server - Acts as the authetication and authorization service for the ecosystem of micro-services. 
 [Work In Progress]
 
-* API Gateway - Uses Zuul to act as API Gateway for routing and authenticating + authorizing API calls.
+* Edge Server - Uses Zuul to act as API Gateway for routing and authenticating + authorizing API calls.
 [Work In Progress]
 
 
@@ -44,6 +44,12 @@ Architecture consists of 6 business services, a centralized config server and se
 
 #### Running on local machine
 * You can build the projects by running the gradlew file under each each project with command "gradlew clean build". The creates a jar file for each individual project. Run the individual project jar by running the command running command - java -jar build/libs/<application_name>.jar command.
+
+You can run the applications in the order listed below.
+    * Config Server - This application should be run first as it holds properties for all applications 
+    * Discovery Server - This application should be run second as all the services register themselves with discovery server
+    * All other components (services and other supporting servives)
+
 * Please refer to the individual readme files on instructions of how to run the services. 
 
 ## <a name="spring-boot-overview"></a>Spring Boot Overview
