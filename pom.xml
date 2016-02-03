@@ -12,6 +12,8 @@
 
     <modules>
         <module>sample-config-server</module>
+        <module>discovery-server</module>
+
     </modules>
 
     <parent>
