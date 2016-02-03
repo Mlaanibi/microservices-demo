@@ -13,6 +13,13 @@
     <modules>
         <module>sample-config-server</module>
         <module>discovery-server</module>
+		<module>accounts-core-service</module>
+		<module>accounts-composite-service</module>
+		<module>payments-core-service</module>
+		<module>transactions-api-service</module>
+		<module>transactions-core-service</module>
+		<module>accounts-api-service</module>
+		<module>monitor-dashboard</module>
 
     </modules>
 
