@@ -44,7 +44,7 @@ Architecture consists of 6 business services, a centralized config server and se
 
 #### Running on local machine
 * You can build the projects either by gradle or maven. 
-    * Gradle: Run the gradlew file under each each project with command "gradlew clean build". The creates a jar file for each individual    project. Run the individual project jar by running the command: java -jar build/libs/<application_name>.jar command. 
+    * Gradle: Run the gradlew file under each each project with command "gradlew clean build". This creates a jar file for each individual    project. Run the individual project jar by running the command: java -jar build/libs/< application_name >.jar command. 
     * Maven: Run maven at the parent project "microservices-demo", this will build all the individual projects. Run the  individual project jar by running the command: mvn spring-boot:run
 
 * You can run the applications in the order listed below.
