@@ -18,7 +18,8 @@ public class AccountController {
 	
 	@Autowired
 	private AccountService accoutService/* = new AccountServiceImpl()*/;
-
+ 
+    @HystrixCommand
     @RequestMapping(value="/accounts", method = RequestMethod.GET, headers = "Accept=application/json")
     public AccountCollectionResponse getAccounts(
     		@RequestParam(value="customerNumber", defaultValue="123") String customerNumber) {
@@ -27,12 +28,14 @@ public class AccountController {
     	response.setAccounts(accoutService.getAccounts(customerNumber));
     	return response;
     }
-    
+  
+    @HystrixCommand	
     @RequestMapping("/accounts/{accountNumber}")
     public Account getAccountDetail(@PathVariable("accountNumber") String accountNumber) {
         return accoutService.getAccount(accountNumber);
     }
 	
+	@HystrixCommand
 	@RequestMapping(value="/accountdetails", method = RequestMethod.GET, headers = "Accept=application/json")
     public AccountCompositeCollection getAccountComposites(
     		@RequestParam(value="customerNumber", defaultValue="123") String customerNumber) {
@@ -41,6 +44,7 @@ public class AccountController {
     	return accountCompositeCollection;
     }
 	
+	@HystrixCommand
 	@RequestMapping(value="/accountdetails/{accountNumber}", method = RequestMethod.GET, headers = "Accept=application/json")
     public AccountComposite getAccountComposite(
     		@PathVariable("accountNumber") String accountNumber) {
